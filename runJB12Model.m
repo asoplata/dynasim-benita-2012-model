@@ -121,7 +121,7 @@ simulator_options={
 %% 2. Assemble and customize the model
 % -------------------------------------------------------------------
 % This builds the complete model, including all populations and connections.
-spec = assembleJB12Spec(dt, numCellsScaledownFactor);
+spec = assembleJB12Spec(numCellsScaledownFactor);
 
 % % Only run this if you do NOT want any noise/randomness in your initial
 % %   conditions, which can be useful for reproducibility or debugging.

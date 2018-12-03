@@ -1,4 +1,4 @@
-function specification = assembleJB12Spec(dt, numCellsScaledown)
+function specification = assembleJB12Spec(numCellsScaledown)
 %ASSEMBLEJB12SPEC - Construct and connect the cortex of the (Benita et al., 2012) model
 %
 % assembleSpecification builds a (Benita et al., 2012)-type DynaSim
@@ -6,7 +6,6 @@ function specification = assembleJB12Spec(dt, numCellsScaledown)
 % mechanism files contained in the 'models/' subdirectory.
 %
 % Inputs:
-%   'dt': time resolution of the simulation, in ms
 %   'numCellsScaledown': number to multiply each cell population size
 %                        by, between 0 and 1. To run the full model, use 
 %                        1. If one wishes to run a smaller model, since 
@@ -111,9 +110,3 @@ specification.connections(4).mechanism_list={...
 specification.connections(5).direction='IN<-IN';
 specification.connections(5).mechanism_list={...
     'iGABAA_IN_IN_JB12'};
-
-
-
-
-
-

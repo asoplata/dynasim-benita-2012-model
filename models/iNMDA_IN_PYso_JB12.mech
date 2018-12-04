@@ -24,7 +24,8 @@
 % 1 mS / 1000000 nS * 100 mm^2 / 1 cm^2 = ...
 % 0.0025 mS/cm^2
 %
-gNMDA = 0.0025 % mS/cm^2
+gNMDAMult = 1 % for experimenting with gAMPA
+gNMDA = gNMDAMult * 0.0025 % mS/cm^2
 ENMDA = 0 % mV
 
 alphaS = 0.5

@@ -37,7 +37,7 @@ eqns={
   'dv/dt=(@current)/Cm'
   'Cm = 1'    % uF/cm^2
   'spike_threshold = -25'
-  'monitor v.spikes(spike_threshold, 1)'
+  'monitor v.spikes(spike_threshold)'
   'vIC = -68'    % mV
   'vNoiseIC = 50' % mV
   'v(0) = vIC+vNoiseIC*rand(1,Npop)'
